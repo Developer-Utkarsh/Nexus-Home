@@ -18,7 +18,7 @@ export default function Home() {
 							direction='up'
 							framerProps={{
 								show: {
-									transition: { delay: 0.1, duration: 0.75 },
+									transition: { delay: 0.1, duration: 1 },
 								},
 							}}
 							text='Meet, Collaborate, Succeed Meetings'

@@ -15,6 +15,8 @@ type FadeTextProps = {
 	text: string;
 };
 
+// ... existing code ...
+
 export function FadeText({
 	direction = "up",
 	className,
@@ -58,25 +60,58 @@ export function FadeText({
 			viewport={{ once: true }}
 			variants={FADE_ANIMATION_VARIANTS}
 		>
-			<motion.div className={className}>
-				<AnimatedGradientText>
-					🎉 <hr className='mx-2 h-4 w-[1px] shrink-0 bg-gray-300' />{" "}
-					<span
-						className={cn(
-							`inline animate-gradient bg-gradient-to-r from-[#ffaa40] via-[#9c40ff] to-[#ffaa40] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent`,
-						)}
+			<motion.div className='flex px-4 flex-col'>
+				<div>
+					<AnimatedGradientText>
+						🎉{" "}
+						<hr className='mx-2 h-4 w-[1px] shrink-0 bg-gray-300' />{" "}
+						<span
+							className={cn(
+								`inline animate-gradient bg-gradient-to-r from-[#ffaa40] via-[#9c40ff] to-[#ffaa40] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent`,
+							)}
+						>
+							Introducing Nexus 2.0
+						</span>
+					</AnimatedGradientText>
+				</div>
+				<motion.h1
+					className='text-white leading-[1.5] max-sm:leading-[1.51] text-[58px] max-md:text-5xl max-sm:text-4xl font-semibold text-center mt-4'
+					variants={{
+						hidden: { opacity: 0, y: 10 },
+						show: {
+							opacity: 1,
+							y: 0,
+							transition: { duration: 1 },
+						},
+					}}
+				>
+					<strong>Meet</strong>, <strong>Collaborate</strong> &{" "}
+					<strong>Succeed</strong> Meetings
+					<motion.span
+						className='text-[40px] max-md:text-4xl max-sm:text-3xl gap-2 font-bold tracking-wide text-zinc-300 justify-center items-center flex max-sm:mt-2'
+						variants={{
+							hidden: { opacity: 0, y: 10 },
+							show: {
+								opacity: 1,
+								y: 0,
+								transition: { delay: 1, duration: 0.75 },
+							},
+						}}
 					>
-						Introducing Nexus 2.0
-					</span>
-				</AnimatedGradientText>
-				<motion.h1 className='text-white leading-[1.75] text-[54px] max-md:text-4xl max-sm:text-3xl font-semibold text-center'>
-					<strong>Meet</strong>, <strong>Collaborate</strong> &
-					<strong> Succeed</strong> Meetings
-					<span className='text-[32px] max-md:text-3xl max-sm:text-2xl gap-2  font-bold tracking-wide text-zinc-300 justify-center items-center flex'>
 						- The <SparklesText text='Nexus' /> Way
-					</span>
+					</motion.span>
 				</motion.h1>
-				<motion.div className='mt-12 mb-4 gap-8 flex flex-wrap justify-center items-center'>
+				<motion.div
+					className='mt-12 mb-4 gap-8 max-sm:gap-4 flex flex-wrap justify-center items-center'
+					variants={{
+						hidden: { opacity: 0, y: 10 },
+						show: {
+							opacity: 1,
+							y: 0,
+							transition: { delay: 1.5, duration: 1 },
+						},
+					}}
+				>
 					<HomeButton />
 					<ShinyButton />
 				</motion.div>
