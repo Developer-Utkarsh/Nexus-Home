@@ -132,10 +132,6 @@ export function FadeText({
 							duration: 1,
 						},
 					},
-					inView: {
-						scale: 1.2,
-						transition: { duration: 0.5 },
-					},
 				}}
 			>
 				<motion.div
