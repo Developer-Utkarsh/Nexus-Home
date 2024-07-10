@@ -3,7 +3,9 @@
 @tailwind utilities;
 
 
-
+body{
+  background-color: #000;
+}
 
 strong {
   position: relative;
@@ -454,4 +456,30 @@ strong::after {
       scale: calc(1 + (var(--active) * 0.1));
       transition: .3s;
     }
+}
+
+::-webkit-scrollbar{
+  width: 8px;
+  background-color: transparent;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #222;
+  border-radius: 10px;
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-up {
+  animation: fade-up 1s ease-out 5s forwards;
 }

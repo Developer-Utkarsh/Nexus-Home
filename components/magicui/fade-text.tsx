@@ -7,6 +7,7 @@ import HomeButton from "../HomeButton";
 import ShinyButton from "../ui/shiny-button";
 import AnimatedGradientText from "../AnimatedGradientText";
 import { cn } from "@/lib/utils";
+import { BentoGridSecondDemo } from "../Complete-Grid";
 
 type FadeTextProps = {
 	className?: string;
@@ -60,7 +61,7 @@ export function FadeText({
 			viewport={{ once: true }}
 			variants={FADE_ANIMATION_VARIANTS}
 		>
-			<motion.div className='flex px-4 flex-col'>
+			<motion.div className='flex px-4 flex-col max-sm:pb-8'>
 				<div>
 					<AnimatedGradientText>
 						🎉{" "}
@@ -114,6 +115,42 @@ export function FadeText({
 				>
 					<HomeButton />
 					<ShinyButton />
+				</motion.div>
+			</motion.div>
+			<motion.div
+				className='bg-transparent z-10 max-sm:px-4 max-sm:py-4 absolute text-left lg:-bottom-[80%] inset-x-0 w-full fade-up'
+				initial='hidden'
+				animate='visible'
+				whileInView='inView'
+				variants={{
+					hidden: { opacity: 0, y: 10 },
+					visible: {
+						opacity: 1,
+						y: 0,
+						transition: {
+							delay: 2,
+							duration: 1,
+						},
+					},
+					inView: {
+						scale: 1.2,
+						transition: { duration: 0.5 },
+					},
+				}}
+			>
+				<motion.div
+					animate={{
+						y: [0, -10, 0],
+					}}
+					transition={{
+						y: {
+							repeat: Infinity,
+							repeatType: "reverse",
+							duration: 1,
+						},
+					}}
+				>
+					<BentoGridSecondDemo />
 				</motion.div>
 			</motion.div>
 		</motion.div>
