@@ -6,9 +6,9 @@ const ShinyButton = ({ text = "shiny-button" }) => {
 	return (
 		<Link
 			href='https://github.com/Developer-Utkarsh/Nexus'
-			className='flex gap-2 cursor-pointer text-white  bg-gradient-to-r hover:from-gray-800 hover:to-black px-6 py-3 rounded-full hover:scale-105 duration-200 justify-center items-center text-lg backdrop-blur-xl border-[0.75px] border-gray-800  z-50 max-sm:text-base max-sm:px-4 max-sm:py-2'
+			className='inline-flex w-full justify-center items-center gap-x-2 border border-zinc-800 hover:border-zinc-600 bg-zinc-950 hover:text-zinc-100 duration-200 sm:w-auto py-4 px-10 rounded-full'
 		>
-			<i className='fa-regular hover:text-yellow-500 fa-star'></i>
+			<i className='fa-brands fa-github'></i>
 			Star on Github
 		</Link>
 	);

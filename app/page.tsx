@@ -2,7 +2,6 @@ import CanvasCursor from "@/components/canvas-cursor";
 import NexusNavbar from "@/components/Navbar";
 
 import { FadeText } from "@/components/magicui/fade-text";
-import { BentoGridSecondDemo } from "@/components/Complete-Grid";
 
 export default function Home() {
 	return (

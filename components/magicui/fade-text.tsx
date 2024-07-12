@@ -7,7 +7,7 @@ import HomeButton from "../HomeButton";
 import ShinyButton from "../ui/shiny-button";
 import AnimatedGradientText from "../AnimatedGradientText";
 import { cn } from "@/lib/utils";
-import { BentoGridSecondDemo } from "../Complete-Grid";
+import { HeroScrollDemo } from "../CompleteScreen";
 
 type FadeTextProps = {
 	className?: string;
@@ -103,7 +103,7 @@ export function FadeText({
 					</motion.span>
 				</motion.h1>
 				<motion.div
-					className='mt-12 mb-4 gap-8 max-sm:gap-4 flex flex-wrap justify-center items-center'
+					className='mt-12 mb-4 gap-8 max-sm:gap-4 flex flex-wrap justify-center z-50 items-center'
 					variants={{
 						hidden: { opacity: 0, y: 10 },
 						show: {
@@ -118,7 +118,7 @@ export function FadeText({
 				</motion.div>
 			</motion.div>
 			<motion.div
-				className='bg-transparent z-10 max-sm:px-4 max-sm:py-4 absolute text-left lg:-bottom-[80%] inset-x-0 w-full fade-up'
+				className='bg-transparent z-10 max-sm:px-4 max-sm:py-4 absolute text-left lg:-bottom-[120%] inset-x-0 w-full fade-up'
 				initial='hidden'
 				animate='visible'
 				whileInView='inView'
@@ -146,7 +146,7 @@ export function FadeText({
 						},
 					}}
 				>
-					<BentoGridSecondDemo />
+					<HeroScrollDemo />
 				</motion.div>
 			</motion.div>
 		</motion.div>
