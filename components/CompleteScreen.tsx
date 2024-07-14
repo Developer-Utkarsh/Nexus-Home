@@ -12,7 +12,7 @@ export function HeroScrollDemo() {
 					alt='hero'
 					height={720}
 					width={1472}
-					className='mx-auto rounded-2xl object-cover h-full object-left-top'
+					className='mx-auto rounded-2xl object-fill h-full object-left-top w-full'
 					draggable={false}
 					unoptimized
 				/>

@@ -118,7 +118,7 @@ export function FadeText({
 				</motion.div>
 			</motion.div>
 			<motion.div
-				className='bg-transparent z-10 max-sm:px-4 max-sm:py-4 absolute text-left lg:-bottom-[120%] inset-x-0 w-full fade-up'
+				className='bg-transparent   absolute text-left  inset-x-0 w-full z-50 fade-up top-[68%] max-md:top-[90%] '
 				initial='hidden'
 				animate='visible'
 				whileInView='inView'

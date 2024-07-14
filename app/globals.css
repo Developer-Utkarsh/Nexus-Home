@@ -483,3 +483,8 @@ strong::after {
 .fade-up {
   animation: fade-up 1s ease-out 5s forwards;
 }
+
+img, video {
+    max-width: auto;
+    height: auto;
+}

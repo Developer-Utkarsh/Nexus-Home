@@ -25,43 +25,29 @@ export const ContainerScroll = ({
 	}, []);
 
 	const scaleDimensions = () => {
-		return isMobile ? [0.7, 0.9] : [1.05, 1];
+		return isMobile ? [0.7, 0.9] : [0.75, 0.8];
 	};
 
-	const rotate = useTransform(scrollYProgress, [0, 1], [20, 0]);
+	const rotate = useTransform(scrollYProgress, [0, 1], [15, 0]);
 	const scale = useTransform(scrollYProgress, [0, 1], scaleDimensions());
 	const translate = useTransform(scrollYProgress, [0, 1], [0, -100]);
 
 	return (
 		<div
-			className='h-[60rem] md:h-[80rem] flex items-center justify-center relative p-0 md:p-0'
+			className='h-[45rem] flex items-center justify-center relative  p-0 md:p-0 max-md:-top-24 '
 			ref={containerRef}
 		>
 			<div
-				className='py-10 md:py-40 w-full relative'
+				className='w-full relative'
 				style={{
-					perspective: "1000px",
+					perspective: "900px",
 				}}
 			>
-				<Header translate={translate} />
 				<Card rotate={rotate} translate={translate} scale={scale}>
 					{children}
 				</Card>
 			</div>
 		</div>
-	);
-};
-
-export const Header = ({ translate }: any) => {
-	return (
-		<motion.div
-			style={{
-				translateY: translate,
-			}}
-			className='div max-w-5xl mx-auto text-center'
-		>
-			{}
-		</motion.div>
 	);
 };
 
