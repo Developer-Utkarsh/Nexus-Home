@@ -15,15 +15,30 @@ const NexusNavbar = () => {
 					></Image>
 				</div>
 				<div className='flex-1 flex ml-10 text-base items-center gap-6 max-md:hidden   text-[#FAFAFA99]'>
-					<p className='hover:text-white hover:cursor-pointer'>
-						Home
-					</p>
-					<p className='hover:text-white hover:cursor-pointer'>
-						About
-					</p>
-					<p className='hover:text-white hover:cursor-pointer'>
+					<Link
+						className='hover:text-white hover:cursor-pointer'
+						href={"#tech"}
+					>
+						Tech Stack
+					</Link>
+					<Link
+						className='hover:text-white hover:cursor-pointer'
+						href={"#features"}
+					>
 						Features
-					</p>
+					</Link>
+					<Link
+						className='hover:text-white hover:cursor-pointer'
+						href={"#about"}
+					>
+						About
+					</Link>
+					<Link
+						className='hover:text-white hover:cursor-pointer'
+						href={"#contact"}
+					>
+						Contact
+					</Link>
 				</div>
 			</div>
 			<div className='flex flex-end items-center  text-gray-400'>
