@@ -3,6 +3,7 @@ import NexusNavbar from "@/components/Navbar";
 
 import { FadeText } from "@/components/magicui/fade-text";
 import { Technologies } from "@/components/Technologies";
+import Features from "@/components/Features";
 
 export default function Home() {
 	return (
@@ -32,6 +33,9 @@ export default function Home() {
 			<section className='[background:radial-gradient(160%_160%_at_50%_90%,#000_40%,#63e_74.75%)] inset-0 -z-30 h-screen w-full'></section>
 			<section className='w-full relative -top-[172px] max-sm:-top-96 z-50 flex justify-center items-center flex-col'>
 				<Technologies />
+			</section>
+			<section className='w-full relative -top-[112px] max-sm:-top-44 z-50 flex justify-center items-center flex-col'>
+				<Features />
 			</section>
 		</>
 	);
