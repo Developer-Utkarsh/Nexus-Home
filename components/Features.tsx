@@ -131,9 +131,10 @@ export default function Features() {
 			opacity: 1,
 			y: 0,
 			transition: {
-				duration: 0.6,
+				duration: 0.9,
 				when: "beforeChildren",
 				staggerChildren: 0.2,
+				delay: 0.4,
 			},
 		},
 	};
@@ -143,7 +144,8 @@ export default function Features() {
 		visible: {
 			opacity: 1,
 			y: 0,
-			transition: { duration: 0.3 },
+
+			transition: { duration: 0.5 },
 		},
 	};
 
@@ -152,7 +154,7 @@ export default function Features() {
 		visible: {
 			opacity: 1,
 			y: 0,
-			transition: { duration: 0.2 },
+			transition: { duration: 0.25 },
 		},
 	};
 
@@ -211,11 +213,11 @@ export default function Features() {
 						{features.map((item, idx) => (
 							<motion.li
 								key={idx}
-								className='bg-transparent transform-gpu dark:[border:1px_solid_rgba(255,255,255,.1)] dark:[box-shadow:0_-20px_80px_-20px_#8686f01f_inset] space-y-3 p-4 border rounded-xl'
+								className='bg-transparent transform-gpu [border:1px_solid_rgba(255,255,255,.1)] [box-shadow:0_-20px_80px_-20px_#8686f01f_inset] space-y-3 p-4 border rounded-xl  hover:border-purple-600 group  hover:bg-transparent/75 transition duration-500'
 								variants={itemVariants}
 							>
 								<motion.div
-									className='text-purple-600 rounded-full p-4 transform-gpu dark:[border:1px_solid_rgba(255,255,255,.1)] dark:[box-shadow:0_-20px_80px_-20px_#8686f01f_inset] w-fit'
+									className='text-purple-600 rounded-full p-4 transform-gpu [border:1px_solid_rgba(255,255,255,.1)] [box-shadow:0_-20px_80px_-20px_#8686f01f_inset] w-fit group-hover:text-white group-hover:bg-purple-600 group-hover:border-none'
 									variants={contentVariants}
 								>
 									{item.icon}
@@ -227,7 +229,7 @@ export default function Features() {
 									{item.title}
 								</motion.h4>
 								<motion.p
-									className='text-gray-500'
+									className='text-gray-500 group-hover:text-slate-400'
 									variants={contentVariants}
 								>
 									{item.desc}

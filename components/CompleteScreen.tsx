@@ -7,14 +7,11 @@ export function HeroScrollDemo() {
 	return (
 		<div className='flex flex-col overflow-hidden'>
 			<ContainerScroll>
-				<Image
+				<img
 					src={`/demo.png`}
 					alt='hero'
-					height={720}
-					width={1472}
 					className='mx-auto rounded-2xl object-fill h-full object-left-top w-full'
 					draggable={false}
-					unoptimized
 				/>
 			</ContainerScroll>
 		</div>
