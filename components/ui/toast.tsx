@@ -30,7 +30,7 @@ const toastVariants = cva(
 		variants: {
 			variant: {
 				default:
-					"border bg-gradient-to-tr from-purple-950/40 via-transparent to-purple-950/40 text-foreground  px-6 py-4 border border-purple-900  hover:border-purple-90/60 hover:from-transparent hover:via-purple-900/60 hover:to-transparent backdrop-shadow-xl  ",
+					"border bg-gradient-to-tr from-purple-950/40 via-black to-purple-950/40 text-foreground  px-6 py-4 border border-purple-900  hover:border-purple-90/60 hover:from-transparent hover:via-purple-900/60 hover:to-transparent backdrop-shadow-xl  ",
 				destructive:
 					"destructive group border-destructive bg-destructive text-destructive-foreground",
 			},

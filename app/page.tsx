@@ -64,6 +64,34 @@ export default function Home() {
 			<section id='contact'>
 				<Contact />
 			</section>
+			<footer className='w-full flex justify-center items-center  mt-12  m-auto'>
+				<div className='w-[75%] flex justify-between items-center  border-t-[0.05px] border-zinc-800 py-4 max-lg:w-[90%] '>
+					<div className='flex items-center justify-center text-xs text-stone-400 gap-2'>
+						<i className='fa-regular fa-copyright'></i>
+						<p>Utkarsh Tiwari</p>
+					</div>
+					<div className='flex items-center justify-center text-xs gap-3 text-stone-400'>
+						<a
+							href='https://www.linkedin.com/in/DeveloperUtkarsh/'
+							target='_blank'
+						>
+							<i className='fa-brands fa-linkedin-in  hover:text-white  transition cursor-pointer'></i>
+						</a>
+						<a
+							href='https://github.com/Developer-Utkarsh'
+							target='_blank'
+						>
+							<i className='fa-brands fa-github hover:text-white transition cursor-pointer'></i>
+						</a>
+						<a
+							href='https://instagram.com/developer_utkarsh/'
+							target='_blank'
+						>
+							<i className='fa-brands fa-instagram  hover:text-white transition cursor-pointer'></i>
+						</a>
+					</div>
+				</div>
+			</footer>
 		</>
 	);
 }
