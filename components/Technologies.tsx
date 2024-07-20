@@ -66,7 +66,7 @@ export const Technologies = () => {
 					</motion.h2>
 				</motion.div>
 				<motion.div
-					className='mt-16 flex items-center gap-4 justify-center overflow-hidden'
+					className='mt-16 flex items-center gap-4 justify-center overflow-hidden bg-transparent'
 					initial='hidden'
 					animate={controls}
 					variants={containerVariants}

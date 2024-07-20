@@ -1,3 +1,5 @@
+"use client";
+
 import CanvasCursor from "@/components/canvas-cursor";
 import NexusNavbar from "@/components/Navbar";
 
@@ -5,8 +7,17 @@ import { FadeText } from "@/components/magicui/fade-text";
 import { Technologies } from "@/components/Technologies";
 import Features from "@/components/Features";
 import { About } from "@/components/About";
+import Contact from "@/components/Contact";
+
+import { useEffect } from "react";
 
 export default function Home() {
+	useEffect(() => {
+		fetch("/api/")
+			.then((response) => response.json())
+			.then((data) => console.log(data))
+			.catch((error) => console.error(error));
+	}, []);
 	return (
 		<>
 			<div className='z-30'>
@@ -32,14 +43,26 @@ export default function Home() {
 				</div>
 			</section>
 			<section className='[background:radial-gradient(160%_160%_at_50%_90%,#000_40%,#63e_74.75%)] inset-0 -z-30 h-screen w-full'></section>
-			<section className='w-full relative -top-[172px] max-sm:-top-96 z-50 flex justify-center items-center flex-col' id="tech">
+			<section
+				className='w-full relative -top-[172px] max-sm:-top-96 z-50 flex justify-center items-center flex-col'
+				id='tech'
+			>
 				<Technologies />
 			</section>
-			<section className='w-full relative -top-[112px] max-sm:-top-64 z-50 flex justify-center items-center flex-col' id="features">
+			<section
+				className='w-full relative -top-[112px] max-sm:-top-64 z-50 flex justify-center items-center flex-col '
+				id='features'
+			>
 				<Features />
 			</section>
-			<section className='w-full relative  max-sm:-top-64 z-50 flex justify-center items-center flex-col' id="about">
+			<section
+				className='w-full relative  max-sm:-top-64 z-50 flex justify-center items-center flex-col'
+				id='about'
+			>
 				<About />
+			</section>
+			<section id='contact'>
+				<Contact />
 			</section>
 		</>
 	);
