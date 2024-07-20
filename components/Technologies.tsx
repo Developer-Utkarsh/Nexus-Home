@@ -31,6 +31,8 @@ export const Technologies = () => {
 		visible: {
 			opacity: 1,
 			transition: {
+				delay: 0.5,
+
 				staggerChildren: 0.2,
 			},
 		},
@@ -42,7 +44,7 @@ export const Technologies = () => {
 			opacity: 1,
 			y: 0,
 			transition: {
-				delay: 1,
+				delay: 0.75,
 				duration: 1.25,
 			},
 		},
