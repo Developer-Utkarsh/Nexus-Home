@@ -4,44 +4,45 @@ import Link from "next/link";
 
 const NexusNavbar = () => {
 	return (
-		<div className='z-50 absolute w-full top-0 px-12 max-md:px-8 justify-between  max-md:py-3 py-6 backdrop-blur-sm flex items-center'>
-			<div className='flex justify-center items-center'>
-				<div className='flex justify-center items-center text-2xl tracking-wide mb-2 font-bold text-[#FAFAFA]'>
+		<div className='z-50 absolute w-full top-0 px-12 max-md:px-8 justify-between max-md:py-3 py-6 backdrop-blur-sm flex items-center'>
+			<div className='flex justify-start items-center'>
+				<div className='flex justify-center items-center gap-3 text-3xl tracking-wide mb-2 font-bold text-[#FAFAFA]'>
 					<Image
 						src='/nexus.png'
 						alt='logo'
-						width={102}
-						height={78}
+						width={28}
+						height={28}
 					></Image>
-				</div>
-				<div className='flex-1 flex ml-10 text-base items-center gap-6 max-md:hidden   text-[#FAFAFA99]'>
-					<Link
-						className='hover:text-white hover:cursor-pointer'
-						href={"#tech"}
-					>
-						Tech Stack
-					</Link>
-					<Link
-						className='hover:text-white hover:cursor-pointer'
-						href={"#features"}
-					>
-						Features
-					</Link>
-					<Link
-						className='hover:text-white hover:cursor-pointer'
-						href={"#about"}
-					>
-						About
-					</Link>
-					<Link
-						className='hover:text-white hover:cursor-pointer'
-						href={"#contact"}
-					>
-						Contact
-					</Link>
+					<p>Nexus</p>
 				</div>
 			</div>
-			<div className='flex flex-end items-center  text-gray-400'>
+			<div className='flex-1 flex justify-center text-base items-center gap-6 max-md:hidden text-[#FAFAFA99]'>
+				<Link
+					className='hover:text-white hover:cursor-pointer'
+					href={"#tech"}
+				>
+					Tech Stack
+				</Link>
+				<Link
+					className='hover:text-white hover:cursor-pointer'
+					href={"#features"}
+				>
+					Features
+				</Link>
+				<Link
+					className='hover:text-white hover:cursor-pointer'
+					href={"#about"}
+				>
+					About
+				</Link>
+				<Link
+					className='hover:text-white hover:cursor-pointer'
+					href={"#contact"}
+				>
+					Contact
+				</Link>
+			</div>
+			<div className='flex justify-end items-center text-gray-400'>
 				<div className='btn-conteiner'>
 					<div>
 						<Link
