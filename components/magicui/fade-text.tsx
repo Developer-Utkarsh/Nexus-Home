@@ -82,7 +82,7 @@ export function FadeText({
 						show: {
 							opacity: 1,
 							y: 0,
-							transition: { duration: 1 },
+							transition: { duration: 0.6 },
 						},
 					}}
 				>
@@ -95,7 +95,7 @@ export function FadeText({
 							show: {
 								opacity: 1,
 								y: 0,
-								transition: { delay: 1, duration: 0.75 },
+								transition: { delay: 0.5, duration: 0.4 },
 							},
 						}}
 					>
@@ -109,7 +109,7 @@ export function FadeText({
 						show: {
 							opacity: 1,
 							y: 0,
-							transition: { delay: 1.5, duration: 1 },
+							transition: { delay: 1, duration: 0.5 },
 						},
 					}}
 				>
@@ -128,8 +128,8 @@ export function FadeText({
 						opacity: 1,
 						y: 0,
 						transition: {
-							delay: 2,
-							duration: 1,
+							delay: 1.5,
+							duration: 0.6,
 						},
 					},
 				}}
@@ -142,7 +142,7 @@ export function FadeText({
 						y: {
 							repeat: Infinity,
 							repeatType: "reverse",
-							duration: 1,
+							duration: 0.6,
 						},
 					}}
 				>
