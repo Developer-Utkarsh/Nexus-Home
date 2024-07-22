@@ -22,6 +22,7 @@ export default function RootLayout({
 	return (
 		<html lang='en' className='dark'>
 			<head>
+				<meta name="google-site-verification" content="x5z731oUt6c6rD5JDeMZ2hdPutuO1V-xKsHbtf0Lr3c" />
 				<link
 					rel='stylesheet'
 					href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css'
@@ -29,6 +30,7 @@ export default function RootLayout({
 					crossOrigin='anonymous'
 					referrerPolicy='no-referrer'
 				/>
+				
 			</head>
 
 			<body className={`scroll-smooth   ${inter.className}`}>
