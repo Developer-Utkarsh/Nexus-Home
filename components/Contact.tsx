@@ -94,28 +94,28 @@ export default function Contact() {
 	};
 
 	const containerVariants = {
-		hidden: { opacity: 0, y: 50 },
-		visible: {
-			opacity: 1,
-			y: 0,
-			transition: {
-				duration: 1,
-				when: "beforeChildren",
-				staggerChildren: 0.1,
-				delay: 0.25,
-			},
-		},
-	};
-
-	const itemVariants = {
 		hidden: { opacity: 0, y: 20 },
 		visible: {
 			opacity: 1,
 			y: 0,
 			transition: {
-				duration: 1,
+				duration: 0.3,
+				when: "beforeChildren",
+				staggerChildren: 0.1,
+				delay: 0,
+			},
+		},
+	};
 
-				delay: 0.4,
+	const itemVariants = {
+		hidden: { opacity: 0, y:8 },
+		visible: {
+			opacity: 1,
+			y: 0,
+			transition: {
+				duration: 0.3,
+
+				delay: 0.1,
 			},
 		},
 	};

@@ -34,7 +34,7 @@ export default function Home() {
 							direction='up'
 							framerProps={{
 								show: {
-									transition: { delay: 0.1, duration: 1 },
+									transition: { duration: 0.5 },
 								},
 							}}
 							text='Meet, Collaborate, Succeed Meetings'

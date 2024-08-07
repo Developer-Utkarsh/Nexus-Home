@@ -78,11 +78,11 @@ export function FadeText({
 				<motion.h1
 					className='text-white leading-[1.5] max-sm:leading-[1.51] text-[58px] max-md:text-5xl max-sm:text-4xl font-semibold text-center mt-4'
 					variants={{
-						hidden: { opacity: 0, y: 10 },
+						hidden: { opacity: 0, y: 6 },
 						show: {
 							opacity: 1,
 							y: 0,
-							transition: { duration: 0.8 },
+							transition: { duration: 0.5 },
 						},
 					}}
 				>
@@ -91,11 +91,11 @@ export function FadeText({
 					<motion.span
 						className='text-[40px] max-md:text-4xl max-sm:text-3xl gap-2 font-bold tracking-wide text-zinc-300 justify-center items-center flex max-sm:mt-2'
 						variants={{
-							hidden: { opacity: 0, y: 10 },
+							hidden: { opacity: 0, y: 6 },
 							show: {
 								opacity: 1,
 								y: 0,
-								transition: { delay: 0.75, duration: 0.6 },
+								transition: { delay: 0.5, duration: 0.35 },
 							},
 						}}
 					>
@@ -105,11 +105,11 @@ export function FadeText({
 				<motion.div
 					className='mt-12 mb-4 gap-8 max-sm:gap-4 flex flex-wrap justify-center z-50 items-center'
 					variants={{
-						hidden: { opacity: 0, y: 10 },
+						hidden: { opacity: 0, y: 6 },
 						show: {
 							opacity: 1,
 							y: 0,
-							transition: { delay: 1.25, duration: 0.7 },
+							transition: { delay: 0.75, duration: 0.4 },
 						},
 					}}
 				>
@@ -123,13 +123,13 @@ export function FadeText({
 				animate='visible'
 				whileInView='inView'
 				variants={{
-					hidden: { opacity: 0, y: 10 },
+					hidden: { opacity: 0, y: 6 },
 					visible: {
 						opacity: 1,
 						y: 0,
 						transition: {
-							delay: 1.8,
-							duration: 0.75,
+							delay: 1,
+							duration: 0.5,
 						},
 					},
 				}}

@@ -126,7 +126,7 @@ export default function Features() {
 	];
 
 	const containerVariants = {
-		hidden: { opacity: 0, y: 20 },
+		hidden: { opacity: 0, y: 8 },
 		visible: {
 			opacity: 1,
 			y: 0,
@@ -134,13 +134,13 @@ export default function Features() {
 				duration: 0.5,
 				when: "beforeChildren",
 				staggerChildren: 0.2,
-				delay: 0.25,
+				delay: 0.2,
 			},
 		},
 	};
 
 	const itemVariants = {
-		hidden: { opacity: 0, y: 20 },
+		hidden: { opacity: 0, y: 10 },
 		visible: {
 			opacity: 1,
 			y: 0,
@@ -150,7 +150,7 @@ export default function Features() {
 	};
 
 	const contentVariants = {
-		hidden: { opacity: 0, y: 10 },
+		hidden: { opacity: 0, y: 4 },
 		visible: {
 			opacity: 1,
 			y: 0,
@@ -169,9 +169,9 @@ export default function Features() {
 			<motion.img
 				src='https://tailwindcss.com/_next/static/media/docs@30.8b9a76a2.avif'
 				className='absolute z-2 -top-0'
-				initial={{ opacity: 0, y: 20 }}
+				initial={{ opacity: 0, y: 12 }}
 				animate={{ opacity: 1, y: 0 }}
-				transition={{ duration: 0.6 }}
+				transition={{ duration: 0.4 }}
 			/>
 			<div className='w-full mx-auto px-4 text-gray-400 md:px-8'>
 				<motion.div

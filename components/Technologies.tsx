@@ -31,7 +31,8 @@ export const Technologies = () => {
 		visible: {
 			opacity: 1,
 			transition: {
-				delay: 0.5,
+				delay: 0.3,
+				duration: 0.4,
 
 				staggerChildren: 0.2,
 			},
@@ -39,13 +40,13 @@ export const Technologies = () => {
 	};
 
 	const itemVariants = {
-		hidden: { opacity: 0, y: 20 },
+		hidden: { opacity: 0, y:8 },
 		visible: {
 			opacity: 1,
 			y: 0,
 			transition: {
-				delay: 0.75,
-				duration: 1.25,
+				delay: 0.5,
+				duration: 0.5,
 			},
 		},
 	};
